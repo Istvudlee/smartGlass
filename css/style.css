@@ -300,10 +300,81 @@ header {
   display: block;
   color: #000;
   text-decoration: none;
+  -webkit-transition: all .2s ease 0s;
+  transition: all .2s ease 0s;
 }
 
 #materials .cart_material .cart a:hover {
   color: #fff;
+}
+
+#apply {
+  margin: 0 auto;
+  max-width: 1070px;
+  height: 100%;
+}
+
+#apply h3 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
+
+#apply h3 span {
+  border-bottom: 1px solid #000;
+}
+
+#apply .wrap_apply {
+  margin: 0 auto;
+  max-width: 1070px;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-columns: 24% 24% 24% 24%;
+      grid-template-columns: 24% 24% 24% 24%;
+}
+
+#apply .wrap_apply .item_card {
+  position: relative;
+  text-align: center;
+  height: auto;
+  margin-bottom: 10px;
+  background: #c9dbe3;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: start;
+}
+
+#apply .wrap_apply .item_card a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+}
+
+#apply .wrap_apply .item_card h5 {
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;
+  text-transform: uppercase;
+  font-size: 16px;
+  height: 50px;
+}
+
+#apply .wrap_apply .item_card .buttonItem {
+  -webkit-transition: all .5s ease 0s;
+  transition: all .5s ease 0s;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 footer {
@@ -534,6 +605,38 @@ footer {
   #whatSmartGlass .wrapWhat img {
     display: block;
     margin: 20px auto 20px;
+  }
+  #materials {
+    width: 92%;
+  }
+  #materials .cart_material .cart {
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+    justify-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  #materials .cart_material .cart img {
+    width: 100%;
+  }
+  #materials .cart_material {
+    height: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  #apply {
+    width: 92%;
+    margin: 0 auto;
+  }
+  #apply .wrap_apply {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
   }
 }
 /*# sourceMappingURL=style.css.map */
