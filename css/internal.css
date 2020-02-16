@@ -131,8 +131,48 @@ header {
 #banner {
   margin: 0 auto;
   max-width: 1070px;
-  height: 100%;
-  background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+  height: 100px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-grid-columns: 12% 75% 12%;
+      grid-template-columns: 12% 75% 12%;
+  margin-top: 20px;
+  background: linear-gradient(45deg, #d7e9ff, #ffffff);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+#banner img {
+  text-align: center;
+}
+
+#banner h5 {
+  padding-left: 15px;
+  padding-bottom: 7px;
+}
+
+#banner p {
+  font-size: 14px;
+  padding-left: 15px;
+  width: 80%;
+}
+
+#banner a {
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px dashed #000;
+}
+
+#banner a:hover {
+  border-bottom: 1px dashed #6dafff;
+  color: #6dafff;
 }
 
 #breadcrumbs {

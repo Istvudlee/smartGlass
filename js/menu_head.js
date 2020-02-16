@@ -10,9 +10,9 @@ let fullfon = document.querySelector('.fullfon');
 let blockforma = document.querySelector('.blockforma');
 let button_form = document.querySelectorAll('#callback, .prduct_button, #callback2');
 let closeForm = document.getElementById('close_form');
-
-
-
+let imgButton = document.querySelector('.toggleButton');
+let imgFon = document.querySelector('.img_fon')
+let fonOff = document.querySelector('.fonOff')
 
 // Бургер меню
 imgMenuBurger.addEventListener('click', () => {
@@ -20,6 +20,16 @@ imgMenuBurger.addEventListener('click', () => {
 })
 closeBurger.addEventListener('click', () => {
 	mobileBurger.style.display = 'none'
+})
+// fon change 
+imgButton.addEventListener('click', () => {
+  console.log(Number(fonOff.style.opacity))
+	if (Number(fonOff.style.opacity)) {
+		fonOff.style.opacity = '0'
+	} else {
+		fonOff.style.opacity = '1'
+	}
+	
 })
 
 //Forma show 
