@@ -51,8 +51,8 @@ header {
 }
 
 #top ul a:hover {
-  border-bottom: 1px solid #A76C41;
-  color: #A76C41;
+  border-bottom: 1px solid #6dafff;
+  color: #6dafff;
 }
 
 #top .phone {
@@ -69,8 +69,8 @@ header {
 }
 
 #top .phone .link_phone:hover {
-  border-bottom: 1px none #A76C41;
-  color: #A76C41;
+  border-bottom: 1px none #6dafff;
+  color: #6dafff;
 }
 
 #top .phone .link_mail {
@@ -81,8 +81,8 @@ header {
 }
 
 #top .phone .link_mail:hover {
-  border-bottom: 1px none #A76C41;
-  color: #A76C41;
+  border-bottom: 1px none #6dafff;
+  color: #6dafff;
 }
 
 #top .phone .img_menu_burger {
@@ -151,8 +151,6 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-column-align: center;
-      justify-self: center;
 }
 
 #block_fon .toggle img {
@@ -172,12 +170,9 @@ header {
   font-size: 14px;
 }
 
-#block_fon .toggle .arrow {
-  background-image: url(../img/arrow.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 45px;
-  width: 45px;
+#block_fon .toggle .arrow img {
+  width: 60%;
+  display: block;
 }
 
 #block_fon #button {
@@ -233,6 +228,34 @@ header {
 
 #whatSmartGlass .wrapWhat p {
   padding-bottom: 7px;
+}
+
+.subtitle {
+  padding-bottom: 10px;
+  font-size: 14px;
+  width: 70%;
+}
+
+.button {
+  margin-top: 20px;
+}
+
+.button a {
+  padding: 7px;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: #000;
+  font-size: 12px;
+  -webkit-transition: all .2s ease 0s;
+  transition: all .2s ease 0s;
+}
+
+.button a:hover {
+  background: #6dafff;
+  color: #fff;
+  border: 1px solid #6dafff;
 }
 
 #materials {
@@ -316,7 +339,7 @@ header {
 
 #apply h3 {
   margin-top: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   font-size: 1.5em;
 }
@@ -580,7 +603,7 @@ footer {
 }
 
 @media (max-width: 414px) {
-  .menu_footer, #block_fon, #whatSmartGlass .wrapWhat {
+  .menu_footer, #block_fon, #whatSmartGlass .wrapWhat, #partner {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
@@ -589,6 +612,10 @@ footer {
   }
   #top {
     display: none;
+  }
+  .subtitle {
+    padding-bottom: 20px;
+    width: 100%;
   }
   #top_mobile {
     padding-top: 10px;
@@ -721,16 +748,17 @@ footer {
     display: none;
   }
   #whatSmartGlass {
-    background: #fff;
     height: 100%;
   }
   #whatSmartGlass .wrapWhat {
     height: 100%;
-    margin-top: 10px;
   }
   #whatSmartGlass .wrapWhat img {
     display: block;
     margin: 20px auto 20px;
+  }
+  .button {
+    display: none;
   }
   #materials {
     width: 92%;
@@ -779,7 +807,17 @@ footer {
         grid-template-columns: 100%;
   }
   .benefit_cart {
-    padding-bottom: 15px;
+    padding-bottom: 25px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #partner {
+    height: 100%;
+    padding-bottom: 30px;
+  }
+  #partner .img_prt {
+    padding-top: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
